@@ -6,13 +6,24 @@
   :root {
     --color-text-base: #111;
     --color-text-muted: #222;
-    --color-text-inverted: #4f46e5;
     --color-fill: #f1f1f1;
     --color-fill-two: #f4f4f4;
     --color-button-accent: #111;
     --color-button-accent-hover: #222;
     --color-button-muted-hover: #4f46e5;
     --color-button-muted: #28229ff4;
+
+  }
+
+  .theme-black {
+    --color-text-base: #f2f2f2;
+    --color-text-muted: #f4f4f4;
+    --color-fill: #222222;
+    --color-fill-two: #444444;
+    --color-button-accent: #f2f2f2;
+    --color-button-accent-hover: #e1d9d9;
+    --color-button-muted-hover: #c3222ff4;
+    --color-button-muted: #9e1227;
 
   }
 }

@@ -449,13 +449,23 @@ video {
 :root {
   --color-text-base: #111;
   --color-text-muted: #222;
-  --color-text-inverted: #4f46e5;
   --color-fill: #f1f1f1;
   --color-fill-two: #f4f4f4;
   --color-button-accent: #111;
   --color-button-accent-hover: #222;
   --color-button-muted-hover: #4f46e5;
   --color-button-muted: #28229ff4;
+}
+
+.theme-black {
+  --color-text-base: #f2f2f2;
+  --color-text-muted: #f4f4f4;
+  --color-fill: #222222;
+  --color-fill-two: #444444;
+  --color-button-accent: #f2f2f2;
+  --color-button-accent-hover: #e1d9d9;
+  --color-button-muted-hover: #c3222ff4;
+  --color-button-muted: #9e1227;
 }
 
 *, ::before, ::after {
@@ -653,21 +663,12 @@ video {
   background-color: var(--color-button-accent);
 }
 
-.bg-skin-button-muted-hover {
+.bg-skin-button-muted {
   background-color: var(--color-button-muted-hover);
 }
 
 .bg-skin-fill {
   background-color: var(--color-fill);
-}
-
-.bg-sky-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
-}
-
-.bg-slate-100\/60 {
-  background-color: rgb(241 245 249 / 0.6);
 }
 
 .bg-teal-700 {
@@ -679,30 +680,15 @@ video {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
-.from-neutral-950 {
-  --tw-gradient-from: #0a0a0a var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(10 10 10 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-skin-hue {
   --tw-gradient-from: var(--color-fill) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.via-neutral-700 {
-  --tw-gradient-to: rgb(64 64 64 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #404040 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
 .via-skin-saturation {
   --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--color-fill-two) var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.to-neutral-950 {
-  --tw-gradient-to: #0a0a0a var(--tw-gradient-to-position);
 }
 
 .p-6 {
@@ -755,11 +741,6 @@ video {
   font-weight: 600;
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .text-skin-base {
   color: var(--color-text-base);
 }
@@ -772,16 +753,11 @@ video {
   color: var(--color-text-muted);
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:bg-skin-button-accent-hover:hover {
   background-color: var(--color-button-accent-hover);
 }
 
-.hover\:bg-skin-button-muted:hover {
+.hover\:bg-skin-button-muted-hover:hover {
   background-color: var(--color-button-muted);
 }
 
