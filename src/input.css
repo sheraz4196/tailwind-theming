@@ -4,26 +4,26 @@
 
 @layer base {
   :root {
-    --color-text-base: #111;
-    --color-text-muted: #222;
-    --color-fill: #f1f1f1;
-    --color-fill-two: #f4f4f4;
-    --color-button-accent: #111;
-    --color-button-accent-hover: #222;
-    --color-button-muted-hover: #4f46e5;
-    --color-button-muted: #28229ff4;
+    --color-text-base: 17, 17, 17;
+    --color-text-muted: 34, 34, 34;
+    --color-fill: 241, 241, 241;
+    --color-fill-two: 245, 245, 245;
+    --color-button-accent: 17, 17, 17;
+    --color-button-accent-hover: 34, 34, 34;
+    --color-button-muted-hover: 79, 70, 229;
+    --color-button-muted: 40, 34, 159;
 
   }
 
   .theme-black {
-    --color-text-base: #f2f2f2;
-    --color-text-muted: #f4f4f4;
-    --color-fill: #111111;
-    --color-fill-two: #222222;
-    --color-button-accent: #f2f2f2;
-    --color-button-accent-hover: #e1d9d9;
-    --color-button-muted-hover: #c3222ff4;
-    --color-button-muted: #9e1227;
+    --color-text-base: 242, 242, 242;
+    --color-text-muted: 244, 244, 244;
+    --color-fill: 17, 17, 17;
+    --color-fill-two: 34, 34, 34;
+    --color-button-accent: 242, 242, 242;
+    --color-button-accent-hover: 225, 217, 217;
+    --color-button-muted-hover: 195, 34, 47;
+    --color-button-muted: 158, 18, 39;
 
   }
 }

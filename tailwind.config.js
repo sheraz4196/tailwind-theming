@@ -1,3 +1,12 @@
+function withopacity(variablename) {
+  return ({ opacityvalue }) => {
+    if (opacityvalue !== undefined) {
+      return `rgba(var(${variablename}), ${opacityvalue})`;
+    }
+    return `rgba(var(${variablename}))`;
+  };
+}
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/*.html"],
@@ -5,24 +14,24 @@ module.exports = {
     extend: {
       textColor: {
         skin: {
-          fill: "var(--color-fill)",
-          base: "var(--color-text-base)",
-          muted: "var(--color-text-muted)",
+          fill: withopacity("--color-fill"),
+          base: withopacity("--color-text-base"),
+          muted: withopacity("--color-text-muted"),
         },
       },
       backgroundColor: {
         skin: {
           fill: "var(--color-fill)",
-          "button-accent": "var(--color-button-accent)",
-          "button-accent-hover": "var(--color-button-accent-hover)",
-          "button-muted-hover": "var(--color-button-muted)",
-          "button-muted": "var(--color-button-muted-hover)",
+          "button-accent": withopacity("--color-button-accent"),
+          "button-accent-hover": withopacity("--color-button-accent-hover"),
+          "button-muted-hover": withopacity("--color-button-muted-hover"),
+          "button-muted": withopacity("--color-button-muted"),
         },
       },
       gradientColorStops: {
         skin: {
-          hue: "var(--color-fill)",
-          saturation: "var(--color-fill-two)",
+          hue: withopacity("--color-fill"),
+          saturation: withopacity("--color-fill-two"),
         },
       },
     },
