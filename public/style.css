@@ -460,8 +460,8 @@ video {
 .theme-black {
   --color-text-base: #f2f2f2;
   --color-text-muted: #f4f4f4;
-  --color-fill: #222222;
-  --color-fill-two: #444444;
+  --color-fill: #111111;
+  --color-fill-two: #222222;
   --color-button-accent: #f2f2f2;
   --color-button-accent-hover: #e1d9d9;
   --color-button-muted-hover: #c3222ff4;
