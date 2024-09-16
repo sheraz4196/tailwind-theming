@@ -28,9 +28,30 @@
   }
 
   .theme-profile-black {
+    --color-fill-grey: 153, 153, 153, 0.3;
     --color-text-base: 242, 242, 242;
+    --color-text-grey: 192, 192, 192;
+    --color-text-blue: 128, 163, 176;
+    --color-fill-blue: 42, 42, 171, 0.9;
     --color-camera-button: 241, 241, 241, 0.1;
     --color-fill: 34, 34, 34;
-    --border-color: 34, 34, 34;
+    --color-fill-white: 242, 242, 242;
+    --border-color-primary: 34, 34, 34;
+    --border-color-secondary: 68, 68, 68;
+    --color-dark-black: 17, 17, 17;
+  }
+
+  .theme-profile-light {
+    --color-dark-black: 17, 17, 17;
+    --color-text-blue: 43, 124, 233;
+    --color-fill-blue: 229, 242, 255;
+    --color-text-base-white: 242, 242, 242;
+    --bg-color-grey: 192, 192, 192;
+    --color-text-grey: 100, 100, 100;
+    --color-fill-grey: 153, 153, 153, 0.3;
+    --color-camera-button: 228, 230, 235;
+    --color-fill-white: 241, 241, 241;
+    --border-color-primary: 241, 241, 241;
+    --border-color-secondary: 200, 200, 200;
   }
 }

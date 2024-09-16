@@ -13,17 +13,26 @@ module.exports = {
   theme: {
     extend: {
       borderColor: {
-        primary: withopacity("--border-color"),
+        primary: withopacity("--border-color-primary"),
+        secondary: withopacity("--border-color-secondary"),
       },
       textColor: {
         skin: {
+          blue: withopacity("--color-text-blue"),
+          grey: withopacity("--color-text-grey"),
           fill: withopacity("--color-fill"),
+          "base-white": withopacity("--color-text-base-white"),
           base: withopacity("--color-text-base"),
           muted: withopacity("--color-text-muted"),
         },
       },
       backgroundColor: {
         skin: {
+          blue: withopacity("--color-fill-blue"),
+          grey: withopacity("--bg-color-grey"),
+          "fill-dark": withopacity("--color-dark-black"),
+          "fill-grey": withopacity("--color-fill-grey"),
+          "fill-white": withopacity("--color-fill-white"),
           fill: withopacity("--color-fill"),
           "button-accent": withopacity("--color-button-accent"),
           "button-accent-hover": withopacity("--color-button-accent-hover"),
