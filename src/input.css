@@ -26,4 +26,11 @@
     --color-button-muted: 158, 18, 39;
 
   }
+
+  .theme-profile-black {
+    --color-text-base: 242, 242, 242;
+    --color-camera-button: 241, 241, 241, 0.1;
+    --color-fill: 34, 34, 34;
+    --border-color: 34, 34, 34;
+  }
 }
