@@ -7,10 +7,12 @@
     <title>Profile Theme</title>
   </head>
   <body>
-    <div class="grid sm:grid-flow-col justify-center gap-8 m-10">
+    <div class="grid sm:grid-cols-2 gap-8 m-10">
       <!-- first black profile -->
-      <div class="relative theme-profile-black flex flex-col max-w-lg">
-        <div class="flex justify-between items-center p-4 pb-1 bg-skin-fill">
+      <div class="theme-profile-black flex flex-col relative">
+        <div
+          class="sticky top-0 flex justify-between items-center p-4 pb-1 bg-skin-fill z-50"
+        >
           <svg
             fill="#f2f2f2"
             height="28px"
@@ -42,40 +44,40 @@
             />
           </svg>
         </div>
-        <div class="bg-skin-fill relative">
-          <img
-            src="../public/assests/Black theme/cover-photo.jpg"
-            alt="cover-photo"
-            class="w-full h-1/2 object-cover object-center"
-          />
-          <svg
-            class="p-2 rounded-full bg-skin-camera absolute right-3 bottom-44"
-            fill="#f2f2f2"
-            width="40px"
-            height="40px"
-            viewBox="0 0 16 16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M15 3.5h-4l-.22-.65A1.24 1.24 0 0 0 9.6 2H6.4a1.24 1.24 0 0 0-1.18.85L5 3.5H1a1 1 0 0 0-1 1V13a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a1 1 0 0 0-1-1zm-.25 9.25H1.25v-8H5.9l.5-1.5h3.2l.5 1.5h4.65z"
+        <form>
+          <figure class="h-48 w-full relative">
+            <img
+              src="../public/assests/Black theme/cover-photo.jpg"
+              alt="cover-photo"
+              class="h-full w-full object-cover"
             />
-            <path
-              d="M8 6a2.59 2.59 0 0 0-2.67 2.5A2.59 2.59 0 0 0 8 11a2.59 2.59 0 0 0 2.67-2.5A2.59 2.59 0 0 0 8 6zm0 3.75A1.35 1.35 0 0 1 6.58 8.5 1.35 1.35 0 0 1 8 7.25 1.35 1.35 0 0 1 9.42 8.5 1.35 1.35 0 0 1 8 9.75z"
-            />
-            <ellipse cx="12.84" cy="6.63" rx=".67" ry=".63" />
-          </svg>
-          <div class="absolute bottom-32 left-3">
-            <div class="relative">
+            <svg
+              class="absolute bottom-2 right-2 p-2 bg-skin-camera rounded-full"
+              fill="#f2f2f2"
+              width="36px"
+              height="36px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 3.5h-4l-.22-.65A1.24 1.24 0 0 0 9.6 2H6.4a1.24 1.24 0 0 0-1.18.85L5 3.5H1a1 1 0 0 0-1 1V13a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a1 1 0 0 0-1-1zm-.25 9.25H1.25v-8H5.9l.5-1.5h3.2l.5 1.5h4.65z"
+              />
+              <path
+                d="M8 6a2.59 2.59 0 0 0-2.67 2.5A2.59 2.59 0 0 0 8 11a2.59 2.59 0 0 0 2.67-2.5A2.59 2.59 0 0 0 8 6zm0 3.75A1.35 1.35 0 0 1 6.58 8.5 1.35 1.35 0 0 1 8 7.25 1.35 1.35 0 0 1 9.42 8.5 1.35 1.35 0 0 1 8 9.75z"
+              />
+              <ellipse cx="12.84" cy="6.63" rx=".67" ry=".63" />
+            </svg>
+            <div class="relative bottom-20 left-3 inline-block">
               <img
                 src="../public/assests/Black theme/user-img.jpg"
-                alt="user-img"
-                class="h-28 w-28 object-cover rounded-full border-4 border-primary"
+                alt="user"
+                class="rounded-full h-32 w-32 object-center object-cover border-4 border-primary"
               />
               <svg
-                class="rounded-full p-2 bg-skin-camera absolute bottom-1 -right-5"
+                class="absolute bottom-2 -right-3 p-2 rounded-full bg-skin-camera"
                 fill="#f2f2f2"
-                width="40px"
-                height="40px"
+                width="36px"
+                height="36px"
                 viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -88,11 +90,19 @@
                 <ellipse cx="12.84" cy="6.63" rx=".67" ry=".63" />
               </svg>
             </div>
-          </div>
+          </figure>
+        </form>
+        <div class="text-skin-base bg-skin-fill px-4 pt-16">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          quisquam dignissimos reiciendis, aut deserunt vero voluptatem dolorum
+          doloribus quibusdam minus sit maxime praesentium magnam a laboriosam!
+          Ratione consectetur sint deleniti nihil placeat ut ipsam in itaque,
+          repellendus nesciunt alias? Qui sunt, quidem rerum totam harum eius
+          voluptatem fugit ullam maxime.
         </div>
       </div>
       <!-- second white profile -->
-      <div class="theme-profile-black max-w-lg">
+      <div class="theme-profile-black">
         <div class="flex justify-between p-6 text-skin-base bg-skin-fill">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
           accusamus aliquid quod quo. Officiis sit maiores expedita nisi ipsum
